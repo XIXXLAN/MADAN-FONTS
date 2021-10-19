@@ -10,4 +10,9 @@
   "dependencies": {
     "chart.js": "^3.7.0",
     "core-js": "^3.6.5",
-    "num
+    "numeral": "^2.0.6",
+    "tailwindcss": "^1.1.2",
+    "vue": "^3.0.0",
+    "vue-chartkick": "^1.1.0",
+    "vue-router": "^4.0.12",
+    "vue-sp
