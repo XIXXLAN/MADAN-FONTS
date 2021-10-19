@@ -15,4 +15,9 @@
     "vue": "^3.0.0",
     "vue-chartkick": "^1.1.0",
     "vue-router": "^4.0.12",
-    "vue-sp
+    "vue-spinner": "^1.0.4"
+  },
+  "devDependencies": {
+    "@ianaya89/vue-cli-plugin-tailwind": "~1.1.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+ 
