@@ -20,4 +20,8 @@ export default {
         },
         {
           title: "ETH",
-   
+          to: { name: "coin-detail", params: { id: "ethereum" } },
+        },
+        {
+          title: "XRP",
+ 
