@@ -7,3 +7,12 @@
 
 <script>
 import PxHeader from "@/components/PxHeader";
+
+export default {
+  name: "App",
+
+  data() {
+    return {
+      links: [
+        {
+          title: "BTC"
