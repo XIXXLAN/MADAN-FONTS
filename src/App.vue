@@ -24,4 +24,10 @@ export default {
         },
         {
           title: "XRP",
- 
+          to: { name: "coin-detail", params: { id: "xrp" } },
+        },
+      ],
+    };
+  },
+  components: {
+    PxHea
