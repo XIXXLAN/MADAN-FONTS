@@ -30,4 +30,12 @@ export default {
     };
   },
   components: {
-    PxHea
+    PxHeader,
+  },
+};
+</script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antia
