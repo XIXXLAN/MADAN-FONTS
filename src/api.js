@@ -9,4 +9,10 @@ function getAssets() {
 function getAsset(coin) {
   return fetch(`${url}/assets/${coin}`)
     .then((res) => res.json())
-    .then((res) => 
+    .then((res) => res.data);
+}
+
+function getAssetHistory(coin) {
+  const now = new Date();
+  const end = now.getTime();
+  now.setDate(now.getDate(
