@@ -32,3 +32,7 @@ function getMarkets (coin){
 }
 
 function getExchange(id){
+    return fetch(`${url}/exchanges/${id}`)
+        .then((res) => res.json())
+        .then((res) => res.data);
+}
