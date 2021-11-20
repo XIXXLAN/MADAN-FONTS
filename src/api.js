@@ -21,4 +21,9 @@ function getAssetHistory(coin) {
   return fetch(
     `${url}/assets/${coin}/history?interval=h1&start=${start}&end=${end}`
   )
-    .
+    .then((res) => res.json())
+    .then((res) => res.data);
+}
+
+function getMarkets (coin){
+    return fetch(`${url}/assets
