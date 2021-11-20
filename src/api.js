@@ -26,4 +26,9 @@ function getAssetHistory(coin) {
 }
 
 function getMarkets (coin){
-    return fetch(`${url}/assets
+    return fetch(`${url}/assets/${coin}/markets?limit=5`)
+        .then((res) => res.json())
+        .then((res) => res.data);
+}
+
+function getExchange(id){
