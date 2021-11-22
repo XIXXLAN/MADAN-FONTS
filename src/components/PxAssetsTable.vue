@@ -26,3 +26,126 @@
             type="text"
             v-model="filter"
           />
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        v-for="asset in filteredAssets"
+        v-bind:key="asset.id"
+        class="border-b border-gray-200 hover:bg-gray-100 hover:bg-orange-100"
+      >
+        <td>
+          <img
+            class="w-6 h-6"
+            v-bind:src="`https://static.coincap.io/assets/icons/${asset.symbol.toLowerCase()}@2x.png`"
+            v-bind:alt="asset.name"
+          />
+        </td>
+        <td>
+          <b># {{ asset.rank }}</b>
+        </td>
+        <td>
+          <router-link
+            class="hover:underline text-green-600"
+            v-bind:to="{ name: 'coin-detail', params: { id: asset.id } }"
+          >
+            {{ asset.name }}
+          </router-link>
+          <small class="ml-1 text-gray-500">
+            {{ asset.symbol }}
+          </small>
+        </td>
+        <td>
+          {{ dollarFilter(asset.priceUsd) }}
+        </td>
+        <td>
+          {{ dollarFilter(asset.marketCapUsd) }}
+        </td>
+        <td
+          v-bind:class="
+            asset.changePercent24Hr.includes('-')
+              ? 'text-red-600'
+              : 'text-green-600'
+          "
+        >
+          {{ percentFilter(asset.changePercent24Hr) }}
+        </td>
+        <td class="hidden sm:block">
+          <px-button v-on:custom-click="goToCoin(asset.id)">
+            <span> Detalle </span>
+          </px-button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</template>
+
+<script>
+import { dollarFilter, percentFilter } from "@/filters";
+import PxButton from "@/components/PxButton";
+
+export default {
+  name: "PxAssetsTable",
+  components: { PxButton },
+
+  data() {
+    return {
+      filter: "",
+      sortOrder: 1,
+    };
+  },
+
+  props: {
+    assets: {
+      type: Array,
+      default: () => [],
+    },
+  },
+
+  computed: {
+    filteredAssets() {
+      return this.assets
+        .filter(
+          (a) =>
+            a.symbol.toLowerCase().includes(this.filter.toLowerCase()) ||
+            a.name.toLowerCase().includes(this.filter.toLowerCase())
+        )
+        .sort((a, b) => {
+          if (parseInt(a.rank) > parseInt(b.rank)) {
+            return this.sortOrder;
+          }
+          return this.sortOrder * -1;
+        });
+    },
+  },
+
+  methods: {
+    goToCoin(id) {
+      this.$router.push({ name: "coin-detail", params: { id } });
+    },
+
+    changeSortOrder() {
+      console.log("antes:", this.sortOrder);
+      this.sortOrder *= -1;
+      console.log("despues:", this.sortOrder);
+    },
+  },
+
+  setup() {
+    return {
+      dollarFilter,
+      percentFilter,
+    };
+  },
+};
+</script>
+
+<style scoped>
+.up::before {
+  content: "👆";
+}
+
+.down::before {
+  content: "👇";
+}
