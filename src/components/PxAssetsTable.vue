@@ -149,3 +149,27 @@ export default {
 .down::before {
   content: "👇";
 }
+
+td {
+  padding: 20px 0px;
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+th {
+  padding: 5px;
+  font-size: 0.6rem;
+}
+
+@media (min-width: 640px) {
+  td,
+  th {
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  th {
+    padding: 12px;
+  }
+}
+</style>
