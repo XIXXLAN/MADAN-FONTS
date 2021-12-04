@@ -9,4 +9,12 @@
       v-bind:size="'8px'"
     >
     </beat-loader>
-    
+    <p v-show="!isLoading">
+      <slot></slot>
+    </p>
+  </button>
+</template>
+
+<script>
+import BeatLoader from "vue-spinner/src/BeatLoader.vue";
+e
