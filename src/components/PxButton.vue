@@ -27,4 +27,12 @@ export default {
     },
   },
 
-  components
+  components: { BeatLoader },
+
+  methods: {
+    buttonClick() {
+      this.$emit("custom-click");
+    },
+  },
+};
+</script>
