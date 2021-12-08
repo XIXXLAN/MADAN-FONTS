@@ -17,4 +17,14 @@
 
 <script>
 import BeatLoader from "vue-spinner/src/BeatLoader.vue";
-e
+export default {
+  name: "PxButton",
+
+  props: {
+    isLoading: {
+      type: Boolean,
+      default: false,
+    },
+  },
+
+  components
