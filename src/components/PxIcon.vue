@@ -16,3 +16,5 @@
       width="937"
       height="853"
       x="0"
+      y="0"
+      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA6kAAANVCAMAAACtUUjjAAAABGdBTUEA
