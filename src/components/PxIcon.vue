@@ -8,4 +8,11 @@
     y="0px"
     width="40px"
     viewBox="0 0 937 853"
-    enable-backgro
+    enable-background="new 0 0 937 853"
+    xml:space="preserve"
+  >
+    <image
+      id="image0"
+      width="937"
+      height="853"
+      x="0"
