@@ -3,4 +3,9 @@
     <div class="flex justify-center">
       <bounce-loader
         v-bind:loading="isLoading"
-        v-bi
+        v-bind:color="'#68d391'"
+        v-bind:size="'100px'"
+      ></bounce-loader>
+    </div>
+    <template v-if="!isLoading">
+ 
