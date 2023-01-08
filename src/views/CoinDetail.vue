@@ -8,4 +8,7 @@
       ></bounce-loader>
     </div>
     <template v-if="!isLoading">
- 
+      <div class="flex flex-col sm:flex-row justify-around items-center">
+        <div class="flex flex-col items-center">
+          <img
+   
