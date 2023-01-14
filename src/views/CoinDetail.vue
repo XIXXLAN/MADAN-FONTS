@@ -21,4 +21,9 @@
               {{ asset.symbol }}
             </small>
           </h1>
- 
+        </div>
+
+        <div class="my-10 flex flex-col">
+          <ul>
+            <li class="flex justify-between">
+        
