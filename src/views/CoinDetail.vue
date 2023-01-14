@@ -12,4 +12,9 @@
         <div class="flex flex-col items-center">
           <img
             v-bind:src="`https://static.coincap.io/assets/icons/${asset.symbol.toLowerCase()}@2x.png`"
-           
+            class="w-20 h-20 mr-5"
+            v-bind:alt="asset.name"
+          />
+          <h1 class="text-5xl">
+            {{ asset.name }}
+            <
