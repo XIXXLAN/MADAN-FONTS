@@ -17,4 +17,8 @@
           />
           <h1 class="text-5xl">
             {{ asset.name }}
-            <
+            <small class="sm:mr-2 text-gray-500">
+              {{ asset.symbol }}
+            </small>
+          </h1>
+ 
