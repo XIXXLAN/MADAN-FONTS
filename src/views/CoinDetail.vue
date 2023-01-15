@@ -26,4 +26,7 @@
         <div class="my-10 flex flex-col">
           <ul>
             <li class="flex justify-between">
-        
+              <b class="text-gray-600 mr-10 uppercase">Ranking</b>
+              <span>#{{ asset.rank }}</span>
+            </li>
+       
