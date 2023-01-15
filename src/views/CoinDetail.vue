@@ -31,4 +31,7 @@
             </li>
             <li class="flex justify-between">
               <b class="text-gray-600 mr-10 uppercase">Precio actual</b>
-              
+              <span>{{ dollarFilter(asset.priceUsd) }}</span>
+            </li>
+            <li class="flex justify-between">
+              <b class="text-gray-600 mr-
