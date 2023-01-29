@@ -34,4 +34,7 @@
               <span>{{ dollarFilter(asset.priceUsd) }}</span>
             </li>
             <li class="flex justify-between">
-              <b class="text-gray-600 mr-
+              <b class="text-gray-600 mr-10 uppercase">Precio más bajo</b>
+              <span>{{ dollarFilter(min) }}</span>
+            </li>
+            <li class="fle
