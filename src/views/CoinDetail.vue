@@ -37,4 +37,6 @@
               <b class="text-gray-600 mr-10 uppercase">Precio más bajo</b>
               <span>{{ dollarFilter(min) }}</span>
             </li>
-            <li class="fle
+            <li class="flex justify-between">
+              <b class="text-gray-600 mr-10 uppercase">Precio más alto</b>
+              <span>{{ do
