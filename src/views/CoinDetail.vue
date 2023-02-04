@@ -47,4 +47,9 @@
             </li>
             <li class="flex justify-between">
               <b class="text-gray-600 mr-10 uppercase">Variación 24hs</b>
-            
+              <span>{{ percentFilter(asset.changePercent24Hr) }}</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="my-10 s
