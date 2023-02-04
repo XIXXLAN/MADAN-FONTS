@@ -45,4 +45,6 @@
               <b class="text-gray-600 mr-10 uppercase">Precio Promedio</b>
               <span> {{ dollarFilter(avg) }}</span>
             </li>
-            <li 
+            <li class="flex justify-between">
+              <b class="text-gray-600 mr-10 uppercase">Variación 24hs</b>
+            
