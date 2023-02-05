@@ -52,4 +52,7 @@
           </ul>
         </div>
 
-        <div class="my-10 s
+        <div class="my-10 sm:mt-0 flex flex-col justify-center text-center">
+          <button
+            v-on:click="toggleConverter"
+            class="bg-green-50
