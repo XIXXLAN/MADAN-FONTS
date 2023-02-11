@@ -68,4 +68,5 @@
                 v-model="convertValue"
                 v-bind:placeholder="`Valor en  ${
                   fromUsd ? 'USD' : asset.symbol
-                } `
+                } `"
+                class="text-center bg-white focus:outline-none focus:shadow-outline border border-gray-300 round
