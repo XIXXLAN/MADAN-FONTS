@@ -65,4 +65,7 @@
               <input
                 id="convertValue"
                 type="number"
-                v-model="co
+                v-model="convertValue"
+                v-bind:placeholder="`Valor en  ${
+                  fromUsd ? 'USD' : asset.symbol
+                } `
