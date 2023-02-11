@@ -61,4 +61,8 @@
           </button>
 
           <div class="flex flex-row my-5">
-            <label class="w-full
+            <label class="w-full" for="convertValue">
+              <input
+                id="convertValue"
+                type="number"
+                v-model="co
