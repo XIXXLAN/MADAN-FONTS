@@ -57,4 +57,8 @@
             v-on:click="toggleConverter"
             class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
           >
-            {{ fromUsd ? `USD a ${asset.symbol} ` : `
+            {{ fromUsd ? `USD a ${asset.symbol} ` : `${asset.symbol} a USD` }}
+          </button>
+
+          <div class="flex flex-row my-5">
+            <label class="w-full
