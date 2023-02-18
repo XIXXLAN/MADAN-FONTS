@@ -71,4 +71,9 @@
                 } `"
                 class="text-center bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
               />
-            </l
+            </label>
+          </div>
+
+          <span class="text-xl">
+            {{ dollarFilter(convertResult) }}
+ 
