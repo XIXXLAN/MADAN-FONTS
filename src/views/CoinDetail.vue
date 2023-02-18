@@ -76,4 +76,9 @@
 
           <span class="text-xl">
             {{ dollarFilter(convertResult) }}
+            {{ fromUsd ? asset.symbol : "USD" }}
+          </span>
+        </div>
+      </div>
+      <line-chart
  
