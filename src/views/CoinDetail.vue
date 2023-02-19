@@ -81,4 +81,8 @@
         </div>
       </div>
       <line-chart
- 
+        class="my-10"
+        v-bind:colors="['orange']"
+        v-bind:min="min"
+        v-bind:max="max"
+        v-
