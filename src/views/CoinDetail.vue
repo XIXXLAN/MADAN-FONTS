@@ -85,4 +85,8 @@
         v-bind:colors="['orange']"
         v-bind:min="min"
         v-bind:max="max"
-        v-
+        v-bind:data="
+          history.map((h) => [h.date, parseFloat(h.priceUsd).toFixed(2)])
+        "
+      >
+      </
