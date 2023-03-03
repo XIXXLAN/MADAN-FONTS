@@ -93,4 +93,9 @@
       <h3 class="text-xl my-10">Mejores Ofertas de Cambio</h3>
       <table>
         <tr
-          v-for="market in mar
+          v-for="market in markets"
+          v-bind:key="`${market.exchangeId}-${market.priceUsd}`"
+          class="border-b"
+        >
+          <td>
+     
