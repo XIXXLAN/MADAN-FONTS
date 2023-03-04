@@ -106,4 +106,8 @@
             <px-button
               v-bind:is-loading="market.isLoading || false"
               v-if="!market.url"
-              v-on:custom-click="
+              v-on:custom-click="getWebSite(market)"
+            >
+              <slot>Obtener link</slot>
+            </px-button>
+            <a v-else class=
