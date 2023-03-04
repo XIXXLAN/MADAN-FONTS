@@ -98,4 +98,6 @@
           class="border-b"
         >
           <td>
-     
+            <b>{{ market.exchangeId }}</b>
+          </td>
+          <td>{{ dollarFilter(market.priceUsd) }}</
