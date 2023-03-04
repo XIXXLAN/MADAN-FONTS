@@ -110,4 +110,8 @@
             >
               <slot>Obtener link</slot>
             </px-button>
-            <a v-else class=
+            <a v-else class="hover:underline text-green-600" target="_blanck">{{
+              market.url
+            }}</a>
+          </td>
+       
