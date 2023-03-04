@@ -104,4 +104,6 @@
           <td>{{ market.baseSymbol }} / {{ market.quoteSymbol }}</td>
           <td>
             <px-button
-          
+              v-bind:is-loading="market.isLoading || false"
+              v-if="!market.url"
+              v-on:custom-click="
