@@ -122,4 +122,6 @@
 
 <script>
 import PxButton from "@/components/PxButton";
-import api 
+import api from "@/api";
+import { dollarFilter, percentFilter } from "@/filters";
+import BounceLoader from "vue-spinner/sr
