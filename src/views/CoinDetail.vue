@@ -100,4 +100,8 @@
           <td>
             <b>{{ market.exchangeId }}</b>
           </td>
-          <td>{{ dollarFilter(market.priceUsd) }}</
+          <td>{{ dollarFilter(market.priceUsd) }}</td>
+          <td>{{ market.baseSymbol }} / {{ market.quoteSymbol }}</td>
+          <td>
+            <px-button
+          
