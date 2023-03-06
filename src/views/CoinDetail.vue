@@ -124,4 +124,12 @@
 import PxButton from "@/components/PxButton";
 import api from "@/api";
 import { dollarFilter, percentFilter } from "@/filters";
-import BounceLoader from "vue-spinner/sr
+import BounceLoader from "vue-spinner/src/BounceLoader.vue";
+
+export default {
+  name: "CoinDetail",
+
+  data() {
+    return {
+      isLoading: false,
+ 
