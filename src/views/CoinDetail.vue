@@ -140,4 +140,12 @@ export default {
     };
   },
 
-  create
+  created() {
+    this.getCoin();
+  },
+
+  components: { BounceLoader, PxButton },
+
+  methods: {
+    toggleConverter() {
+      this.fromUsd =
