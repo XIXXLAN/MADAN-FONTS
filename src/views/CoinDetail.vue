@@ -132,4 +132,12 @@ export default {
   data() {
     return {
       isLoading: false,
- 
+      asset: {},
+      history: [],
+      markets: [],
+      fromUsd: true,
+      convertValue: null,
+    };
+  },
+
+  create
