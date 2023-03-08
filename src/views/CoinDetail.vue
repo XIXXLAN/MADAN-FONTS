@@ -148,4 +148,9 @@ export default {
 
   methods: {
     toggleConverter() {
-      this.fromUsd =
+      this.fromUsd = !this.fromUsd;
+    },
+    getWebSite(exchange) {
+      exchange.isLoading = true;
+      return api
+        .getExchange(exchange.exchange
