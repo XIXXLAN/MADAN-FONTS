@@ -153,4 +153,9 @@ export default {
     getWebSite(exchange) {
       exchange.isLoading = true;
       return api
-        .getExchange(exchange.exchange
+        .getExchange(exchange.exchangeId)
+        .then((res) => {
+          exchange.url = res.exchangeUrl;
+        })
+        .finally(() => {
+          excha
