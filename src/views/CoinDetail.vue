@@ -158,4 +158,9 @@ export default {
           exchange.url = res.exchangeUrl;
         })
         .finally(() => {
-          excha
+          exchange.isLoading = false;
+        });
+    },
+    getCoin() {
+      this.isLoading = true;
+      const id = this.$route.para
