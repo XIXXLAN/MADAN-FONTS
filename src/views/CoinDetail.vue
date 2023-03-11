@@ -163,4 +163,11 @@ export default {
     },
     getCoin() {
       this.isLoading = true;
-      const id = this.$route.para
+      const id = this.$route.params.id;
+
+      Promise.all([
+        api.getAsset(id),
+        api.getAssetHistory(id),
+        api.getMarkets(id),
+      ])
+        .then
