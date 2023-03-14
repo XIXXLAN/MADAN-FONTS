@@ -173,4 +173,11 @@ export default {
         .then(([asset, history, markets]) => {
           this.asset = asset;
           this.history = history;
-          this.markets = m
+          this.markets = markets;
+        })
+        .finally(() => (this.isLoading = false));
+    },
+  },
+
+  computed: {
+    conv
