@@ -170,4 +170,7 @@ export default {
         api.getAssetHistory(id),
         api.getMarkets(id),
       ])
-        .then
+        .then(([asset, history, markets]) => {
+          this.asset = asset;
+          this.history = history;
+          this.markets = m
