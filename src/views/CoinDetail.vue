@@ -180,4 +180,9 @@ export default {
   },
 
   computed: {
-    conv
+    convertResult() {
+      if (!this.convertValue) {
+        return 0;
+      }
+      const result = this.fromUsd
+        ? this.
