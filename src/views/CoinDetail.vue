@@ -185,4 +185,6 @@ export default {
         return 0;
       }
       const result = this.fromUsd
-        ? this.
+        ? this.convertValue / this.asset.priceUsd
+        : this.convertValue * this.asset.priceUsd;
+      return result.toFixed(
