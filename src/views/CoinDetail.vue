@@ -187,4 +187,9 @@ export default {
       const result = this.fromUsd
         ? this.convertValue / this.asset.priceUsd
         : this.convertValue * this.asset.priceUsd;
-      return result.toFixed(
+      return result.toFixed(4);
+    },
+    min() {
+      return Math.min(
+        ...this.history.map((h) => parseFloat(h.priceUsd).toFixed(2))
+     
