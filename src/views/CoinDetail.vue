@@ -197,4 +197,9 @@ export default {
     max() {
       return Math.max(
         ...this.history.map((h) => parseFloat(h.priceUsd).toFixed(2))
-      )
+      );
+    },
+    avg() {
+      return (
+        this.history.reduce((a, b) => a + parseFloat(b.priceUsd), 0) /
+    
