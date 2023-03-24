@@ -202,4 +202,15 @@ export default {
     avg() {
       return (
         this.history.reduce((a, b) => a + parseFloat(b.priceUsd), 0) /
-    
+        this.history.length
+      ).toFixed(2);
+    },
+  },
+
+  watch: {
+    $route() {
+      this.getCoin();
+    },
+  },
+
+ 
