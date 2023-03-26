@@ -213,4 +213,15 @@ export default {
     },
   },
 
- 
+  setup() {
+    return {
+      dollarFilter,
+      percentFilter,
+    };
+  },
+};
+</script>
+
+<style scoped>
+td {
+  pad
