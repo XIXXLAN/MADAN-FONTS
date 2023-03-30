@@ -12,4 +12,11 @@
 <script>
 import api from "@/api";
 import PxAssetsTable from "@/components/PxAssetsTable";
-import Bo
+import BounceLoader from "vue-spinner/src/BounceLoader.vue";
+
+export default {
+  name: "Home",
+
+  components: { PxAssetsTable, BounceLoader },
+
+ 
