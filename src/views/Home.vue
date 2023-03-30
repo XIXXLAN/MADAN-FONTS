@@ -5,4 +5,11 @@
       v-bind:color="'#68d391'"
       v-bind:size="'100px'"
     ></bounce-loader>
-    <px-assets-table v-if="!isLoading" v-bind:assets="a
+    <px-assets-table v-if="!isLoading" v-bind:assets="assets" />
+  </div>
+</template>
+
+<script>
+import api from "@/api";
+import PxAssetsTable from "@/components/PxAssetsTable";
+import Bo
