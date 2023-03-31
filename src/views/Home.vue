@@ -19,4 +19,14 @@ export default {
 
   components: { PxAssetsTable, BounceLoader },
 
- 
+  data() {
+    return {
+      isLoading: false,
+      assets: [],
+    };
+  },
+
+  created() {
+    this.isLoading = true;
+    api
+    
