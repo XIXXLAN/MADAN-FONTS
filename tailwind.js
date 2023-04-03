@@ -4,4 +4,9 @@ module.exports = {
     container: {
       center: true,
     },
-    fontFamil
+    fontFamily: {
+      display: ["Gilroy", "sans-serif"],
+      body: ["Graphik", "sans-serif"],
+    },
+    extend: {
+    
