@@ -18,4 +18,8 @@ module.exports = {
       },
     },
   },
-  vari
+  variants: {
+    opacity: ["responsive", "hover"],
+  },
+  purge: ["./src/**/*.html", "./src/**/*.vue", "./src/**/*.jsx"],
+};
